@@ -4,6 +4,8 @@ import Constants from "expo-constants"
 import { Header } from "../components/header";
 import { Banner } from "../components/banner"
 import { Search } from "../components/search";
+import { Section } from "../components/section";
+import { TrendingFoods } from "../components/trending";
 
 const statusBarHeight = Constants.statusBarHeight
 
@@ -23,6 +25,16 @@ export default function Index() {
         <Search />
         
       </View>
+
+      <Section 
+        name="Comidas em alta"
+        label="Veja mais"
+        action={ () => console.log("Clicou no botão Veja mais") }
+        size="text-2xl"
+      />
+
+      <TrendingFoods />
+
     </ScrollView>
   );
 }
